@@ -1,0 +1,19 @@
+#idH1 {
+    text-align-last: center;
+    padding-bottom: 50px;
+    background-color: aliceblue;
+    
+}
+
+.mb-3 {
+    background-color: aliceblue;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.card{
+    background-color:aliceblue;
+    padding: 50px;
+    border: 2px black;
+    align-content: center;
+}

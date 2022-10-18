@@ -1,0 +1,49 @@
+#jett {
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+
+#reyna {
+    height: 50%;
+    width: 50%;
+    float: right;
+}
+
+#jett:hover {
+    display: none;
+    transition: 6s;
+}
+
+
+#reyna:hover {
+    display: none;
+    transition: 1s;
+}
+
+.div1 {
+    display: block;
+}
+
+.div2 {
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: fixed;
+    border: 20px;
+}
+
+body {
+    background-color: aqua;
+}
+
+#form1 {
+    background-color: bisque;
+    width: fit-content;
+}
+
+#form1:hover {
+    width: 50%;
+    height: 50%;
+    transition: 1s;
+}
