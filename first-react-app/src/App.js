@@ -8,22 +8,27 @@ function App() {
     { id: 3, firstName: 'Megladon', lastName: 'Singh' },
   ];
 
-  //   const createDiv= document.createElement('table');
-  //   createDiv.className='table1';
+  // Use of conditional statements
+  const showComments = true;
+  const commentBlock = (
+    <div className="peoples">
+      <h4>The lenght of the people array is: ({peoples.length})</h4>
+      <ol>
+        {peoples.map((people) => (
+          <li key={people.id}>
+            {people.firstName} , {people.lastName}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
 
   return (
     <div className="container">
       <h3>{title.toUpperCase()}</h3>
       <p>{body}</p>
       <br />
-      <div className="peoples">
-        <h4>The lenght of the people array is: ({peoples.length})</h4>
-        <ol>
-          {peoples.map((people) => (
-            <li key={people.id}>{people.firstName} , {people.lastName}</li>
-          ))}
-        </ol>
-      </div>
+      {showComments ? commentBlock : <h1>Loading...</h1>}
     </div>
   );
 }
